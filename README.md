@@ -1,2 +1,3 @@
-# Floyd-Warshall
-converting floyd warshall algorithim from iterative to recursive
+# Floyd-Warshall Conversion Assignment
+The purpose of this code is to convert floyd warshall algorithim from iterative to recursive
+
