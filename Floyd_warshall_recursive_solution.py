@@ -14,7 +14,8 @@ MAX_LENGTH = len(GRAPH[0])
 
 # MAX_LENGTH identifies the maximum length of the node in the graph
 
-def floyd_recursive(distance, intermediate, start_node, end_node):
+
+def floyd_recursive_shorterpath(distance, intermediate, start_node, end_node):
     """
     This Function updates the distance in the above Matrix according to 
     Floyd-Warshall Algorithim recursively using the below parameters:
@@ -37,7 +38,7 @@ def floyd_recursive(distance, intermediate, start_node, end_node):
     # the above function checks if the path shortens the distance between the 
     # start node and the end node through the intermediate to update the graph
     
-    floyd_recursive(distance, intermediate + 1, start_node, end_node)
+    floyd_recursive_shorterpath(distance, intermediate + 1, start_node, end_node)
 
     # the above function allows the code to jumpe to intermediate + 1
     # to check recursively 
@@ -50,11 +51,11 @@ def fw_recursive(distance):
     for intermediate in range(MAX_LENGTH):
         for start_node in range(MAX_LENGTH):
             for end_node in range(MAX_LENGTH):
-                floyd_recursive(distance, intermediate, start_node, end_node)
+                floyd_recursive_shorterpath(distance, intermediate, start_node, end_node)
 
 # the above function applys the Floyd-Warshall Algorithim
 # using the distance as an input 
-# it checks all possible intermediates between star node and end node
+# it checks all possible intermediates between start node and end node
 # to update the graph
 
 
