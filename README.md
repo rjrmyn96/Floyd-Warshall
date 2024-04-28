@@ -12,3 +12,6 @@ which is used to identify which solution generates the solution faster
 # Tests Directory
 The unit tests for the recursive version of the Floyd-Warshall Algorithm can be found here 
 This directory includes the tests used to ensure the functions in the code are running as expected
+
+# Requirements
+The requirements needed to run the code can be found in the requirements.txt
